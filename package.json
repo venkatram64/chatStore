@@ -1,0 +1,25 @@
+{
+  "name": "chat-store",
+  "version": "1.0.0",
+  "description": "chat for persitance store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venkatram64/chatStore.git"
+  },
+  "author": "Venkatram Veerareddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venkatram64/chatStore/issues"
+  },
+  "homepage": "https://github.com/venkatram64/chatStore#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.13.0",
+    "socket.io": "^2.0.4"
+  }
+}

@@ -116,9 +116,19 @@
 					$message.val('');
 				});
 
-				socket.on('new message', function(data){
-					$chat.append('<strong>'+data.user+': </strong>'+data.msg + '<br>');
+				socket.on('load old msgs', function(docs){
+					docs.forEach(doc =>{
+						displayMsg(doc);
+					});
 				});
+
+				socket.on('new message', function(data){
+					displayMsg(data);
+				});
+
+				function displayMsg(data){
+					$chat.append('<strong>'+data.nick+': </strong>'+data.msg + '<br>');
+				}
 			});
 		</script>
 	</body>
